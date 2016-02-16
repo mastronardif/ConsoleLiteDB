@@ -1,0 +1,35 @@
+[{"Name":"Joana Doe","Phones":["8000-0000","9000-0000"],"IsActive":true},
+{"Name":"Joana Doe","Phones":["8000-0000","9000-0000"],"IsActive":true}
+,{"glossary":{"title":"example glossary","GlossDiv":{"title":"S","GlossList":{"GlossEntry":{"ID":"SGML","SortAs":"SGML","GlossSee":"markup"}}}}}
+, 
+{
+  "glossary": {
+    "title": "fuck you  glossary",
+    "GlossDiv": {
+      "title": "S",
+      "GlossList": {
+        "GlossEntry": {
+          "ID": "SGML",
+          "SortAs": "SGML",
+          "GlossTerm": "Standard Generalized Markup Language",
+          "Acronym": "SGML",
+          "Abbrev": "ISO 8879:1986",
+          "GlossDef": {
+            "para": "A meta-markup language, used to create markup languages such as DocBook.",
+            "GlossSeeAlso": [
+              "GML",
+              "XML"
+            ]
+          },
+          "GlossSee": "markup"
+        }
+      }
+    }
+  }
+}
+
+]
+-- a comment
+--  db.mycol.bulk test.dmp
+-- db.fuck.find  glossary.title like "fuck you  glossary"
+-- db.fuck.find  glossary.GlossDiv.GlossList.GlossEntry.ID like "SGML"

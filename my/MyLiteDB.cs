@@ -42,7 +42,9 @@ namespace my.DAL
                     //BsonValue bv = db.RunCommand(@"db.fuck.bulk ..\..\..\..\test.dmp");
                     
                     bv = db.RunCommand(command);
-                    retval_bvv = bv.ToString();                    
+                    retval_bvv = bv.ToString();
+                    var json = LiteDB.JsonSerializer.Serialize(bv);
+                    Console.WriteLine(json.ToString());
                 }
             }
             catch (Exception ex)
